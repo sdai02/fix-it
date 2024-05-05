@@ -16,5 +16,9 @@ func main() {
 		fmt.Fprintf(w, "wip")
 	})
 
+	http.HandleFunc("/delete", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, "wip")
+	})
+
 	http.ListenAndServe(":8080", nil)
 }
